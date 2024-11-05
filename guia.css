@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Runes';
+  src: url('RunelikeFree-Regular.woff2') format('woff2'),
+       url('RunelikeFree-Regular.woff') format('woff'),
+       url('RunelikeFree-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Mejora la carga de fuentes */
+}
+
+body {
+  font-family: monospace; /* Utiliza la fuente personalizada con un fallback */
+  margin: 0;
+  padding: 0;
+  font-weight: normal; /* Ajusta el peso según sea necesario */
+  background-color: #f9f9f9; /* Añade un color de fondo suave */
+  color: #333; /* Define un color de texto legible */
+}
+
+/* Estilos del Header */
+.header {
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradiente de fondo elegante */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centra el contenido del header */
+  align-items: center;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.351);
+  position: fixed; /* Mantiene el header fijo al hacer scroll */
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho del contenido */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* Color del texto del logo para contrastar con el fondo */
+  margin-right: 40px; /* Espacio entre el logo y el menú */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-menu-item {
+  margin-left: 20px;
+  transform: translateY(-60%);
+}
+
+.nav-menu-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff; /* Color del texto */
+  border-radius: 5px;
+  background: linear-gradient(to bottom right, #1E3C72, #2A5298, #00C9A7);
+  transition: background 0.5s, box-shadow 0.3s, transform 0.3s;
+}
+
+.nav-menu-link:hover {
+  background: linear-gradient(to bottom right, #2A5298, #00C9A7, #1E3C72);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  font-size: 30px;
+  transition: all 0.9s;
+}
+
+/* Alinea el último elemento del menú a la derecha */
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.nav-menu-item:last-child {
+  margin-left: auto; /* Empuja este elemento hacia la derecha */
+}
+
+/* Resto del código */
+.num {
+  text-decoration: none;
+  color: white;
+}
+
+.infor {
+  margin-top: 100px; /* Ajusta para compensar el header fijo */
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.info-a {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+strong {
+  color: #4ebe80;
+}
+
+li {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.info-a1 {
+  font-size: 17px;
+}
+
+.imagen {
+  z-index: 1000;
+}
+
+.cabeza { 
+  margin-top: 150px;
+}
+
+.fondo {
+  margin-bottom: 250px;
+  color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .infor {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .logo {
+      margin-right: 20px;
+  }
+
+  .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-menu-item {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .nav-menu-item:last-child {
+      margin-left: 0;
+  }
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Programación Básica</title>
+    <link rel="stylesheet" href="guia.css">
+    <link rel="shortcut icon" href="favi.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <p class="logo nav-link">Guía de Programación Básica &bull; CSS</p>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="guia.html" class="nav-menu-link nav-link">HTML</a></li>
+                <!--
+                <li class="nav-menu-item"><a href="jump.html" class="nav-menu-link nav-link hola">???</a></li>
+            -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones de CSS -->
+
+    <div class="infor">
+        <h2 class="cabeza">Anatomía</h2>
+        <ul class="info-a">
+            <li>La anatomía en CSS se refiere a la estructura básica de una regla CSS, que incluye el selector y las declaraciones.</li>
+            <li>Cada declaración dentro de una regla CSS consta de una propiedad y un valor, separados por dos puntos.</li>
+            <li>Las reglas CSS se encierran entre llaves para definir el bloque de estilos.</li>
+        </ul>
+
+        <h2>Ejemplos</h2>
+        <ol class="info-a1">
+            <li><strong>selector { propiedad: valor; }</strong> Ejemplo: <strong>p { color: blue; }</strong></li>
+            <li><strong>h1 { font-size: 2em; }</strong></li>
+        </ol>
+    </div>
+
+    <div class="infor">
+        <h2>Animaciones</h2>
+        <ul class="info-a">
+            <li>Las animaciones en CSS permiten cambiar propiedades de un elemento de manera gradual.</li>
+            <li>Se definen usando las propiedades <strong>@keyframes</strong> y <strong>animation</strong>.</li>
+            <li>Las animaciones pueden ser infinitas o limitarse a un número específico de repeticiones.</li>
+        </ul>
+
+        <h2>Ejemplos</h2>
+        <ol class="info-a1">
+            <li>
+                <strong>@keyframes ejemploAnimacion {<br>
+                &nbsp;&nbsp;from { opacity: 0; }<br>
+                &nbsp;&nbsp;to { opacity: 1; }<br>
+                }</strong>
+            </li>
+            <li>
+                <strong>.fade-in {<br>
+                &nbsp;&nbsp;animation: ejemploAnimacion 2s ease-in-out;<br>
+                }</strong>
+            </li>
+        </ol>
+    </div>
+
+    <div class="infor">
+        <h2>Background</h2>
+        <ul class="info-a">
+            <li>La propiedad <strong>background</strong> en CSS se usa para establecer el fondo de un elemento.</li>
+            <li>Puedes definir colores, imágenes, posiciones, y repeticiones para el fondo.</li>
+            <li>Existen propiedades específicas como <strong>background-color</strong>, <strong>background-image</strong>, <strong>background-position</strong>, y <strong>background-repeat</strong>.</li>
+        </ul>
+        
+        <h2>Ejemplos</h2>
+        <ol class="info-a1">
+            <li><strong>background-color: #f0f0f0;</strong></li>
+            <li><strong>background-image: url('fondo.jpg');</strong></li>
+            <li><strong>background: #333 url('fondo.jpg') no-repeat center center;</strong></li>
+        </ol>
+        </div>
+
+        <div class="infor">
+            <h2>Borders</h2>
+            <ul class="info-a">
+                <li>Las propiedades de borde en CSS controlan los bordes de los elementos.</li>
+                <li>Puedes definir el grosor, el estilo y el color del borde.</li>
+                <li>Existen propiedades como <strong>border-width</strong>, <strong>border-style</strong>, y <strong>border-color</strong>.</li>
+            </ul>
+            
+            <h2>Ejemplos</h2>
+            <ol class="info-a1">
+                <li><strong>border: 1px solid #000;</strong></li>
+                <li><strong>border-radius: 5px;</strong> (para bordes redondeados)</li>
+                <li><strong>border-top: 2px dashed red;</strong></li>
+            </ol>
+            </div>
+
+            
+<div class="infor">
+    <h2>Box Model</h2>
+    <ul class="info-a">
+        <li>El Box Model es una caja que envuelve cada elemento HTML, consistiendo en márgenes, bordes, relleno y contenido.</li>
+        <li>Controla cómo los elementos se dimensionan y se posicionan en la página.</li>
+        <li>Comprender el Box Model es fundamental para diseñar layouts efectivos en CSS.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>width: 200px;</strong> Define el ancho del contenido.</li>
+        <li><strong>padding: 10px;</strong> Agrega espacio interno alrededor del contenido.</li>
+        <li><strong>border: 1px solid #000;</strong> Añade un borde alrededor del elemento.</li>
+        <li><strong>margin: 20px;</strong> Añade espacio externo alrededor del elemento.</li>
+    </ol>
+    </div>
+
+    
+<div class="infor">
+    <h2>Box Sizing</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>box-sizing</strong> controla cómo se calculan los anchos y altos de los elementos.</li>
+        <li>Los valores más comunes son <strong>content-box</strong> (por defecto) y <strong>border-box</strong>.</li>
+        <li><strong>border-box</strong> incluye el padding y el borde dentro del ancho y alto especificados.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>box-sizing: border-box;</strong></li>
+        <li>
+            <strong>* {<br>
+            &nbsp;&nbsp;box-sizing: border-box;<br>
+            }</strong>
+            (Aplica box-sizing a todos los elementos)
+        </li>
+    </ol>
+    </div>
+
+    
+<div class="infor">
+    <h2>Colors</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>color</strong> define el color del texto de un elemento.</li>
+        <li>Otras propiedades relacionadas incluyen <strong>background-color</strong> y <strong>border-color</strong>.</li>
+        <li>Puedes usar diferentes formatos de color como nombres, hexadecimales, RGB, RGBA, HSL y HSLA.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>color: red;</strong></li>
+        <li><strong>color: #ff0000;</strong></li>
+        <li><strong>color: rgb(255, 0, 0);</strong></li>
+        <li><strong>color: rgba(255, 0, 0, 0.5);</strong></li>
+    </ol>
+    </div>
+
+    
+<div class="infor">
+    <h2>Combinators</h2>
+    <ul class="info-a">
+        <li>Los combinadores en CSS permiten seleccionar elementos basados en su relación con otros elementos.</li>
+        <li>Los combinadores más comunes son el combinador descendiente (espacio), hijo (>), adyacente (+) y general (~).</li>
+        <li>Facilitan la selección precisa de elementos para aplicar estilos específicos.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>div p { color: blue; }</strong> Selecciona todos los <em>p</em> dentro de <em>div</em>.</li>
+        <li><strong>ul > li { list-style: none; }</strong> Selecciona solo los <em>li</em> que son hijos directos de <em>ul</em>.</li>
+        <li><strong>h1 + p { margin-top: 0; }</strong> Selecciona el <em>p</em> que está inmediatamente después de un <em>h1</em>.</li>
+        <li><strong>h1 ~ p { color: gray; }</strong> Selecciona todos los <em>p</em> que son hermanos de un <em>h1</em>.</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Comments</h2>
+    <ul class="info-a">
+        <li>Los comentarios en CSS se utilizan para agregar notas o descripciones dentro del código.</li>
+        <li>No afectan la presentación del documento y son ignorados por el navegador.</li>
+        <li>Se escriben entre <strong>/*</strong> y <strong>*/</strong>.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>/* Este es un comentario en CSS */</strong></li>
+        <li>
+            <strong>/*<br>
+            &nbsp;&nbsp;Estilos para el encabezado<br>
+            */</strong>
+        </li>
+    </ol>
+    </div>
+
+    
+<div class="infor">
+    <h2>Cursor</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>cursor</strong> controla el tipo de cursor que se muestra cuando el usuario pasa el ratón sobre un elemento.</li>
+        <li>Existen varios valores como <strong>pointer</strong>, <strong>default</strong>, <strong>wait</strong>, <strong>text</strong>, entre otros.</li>
+        <li>Mejora la experiencia del usuario indicando interactividad.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>cursor: pointer;</strong> (Cambia el cursor a una mano apuntando)</li>
+        <li><strong>cursor: wait;</strong> (Cambia el cursor a una rueda giratoria)</li>
+        <li><strong>cursor: text;</strong> (Cambia el cursor a una I para edición de texto)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Display</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>display</strong> determina cómo se muestra un elemento en la página.</li>
+        <li>Los valores comunes incluyen <strong>block</strong>, <strong>inline</strong>, <strong>inline-block</strong>, <strong>flex</strong>, y <strong>none</strong>.</li>
+        <li>Controla el flujo y la disposición de los elementos en el layout.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>display: block;</strong> (Elemento de bloque que ocupa toda la línea)</li>
+        <li><strong>display: inline;</strong> (Elemento en línea que no inicia una nueva línea)</li>
+        <li><strong>display: flex;</strong> (Activa el modelo Flexbox para el contenedor)</li>
+        <li><strong>display: none;</strong> (Oculta el elemento de la página)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Filter Functions</h2>
+    <ul class="info-a">
+        <li>Las funciones de filtro en CSS permiten aplicar efectos visuales a elementos, como desenfoque, brillo, contraste, etc.</li>
+        <li>Se aplican usando la propiedad <strong>filter</strong>.</li>
+        <li>Mejoran la apariencia visual sin necesidad de editar las imágenes originales.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>filter: blur(5px);</strong> (Aplica un desenfoque de 5 píxeles)</li>
+        <li><strong>filter: brightness(150%);</strong> (Aumenta el brillo al 150%)</li>
+        <li><strong>filter: grayscale(100%);</strong> (Convierte la imagen a escala de grises)</li>
+        <li><strong>filter: drop-shadow(16px 16px 20px gray);</strong> (Añade una sombra al elemento)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Flexbox</h2>
+    <ul class="info-a">
+        <li>Flexbox es un modelo de layout en CSS que facilita la alineación y distribución de elementos dentro de un contenedor.</li>
+        <li>Se activa aplicando <strong>display: flex;</strong> al contenedor.</li>
+        <li>Permite una disposición flexible y adaptable, especialmente útil para diseños responsivos.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li>
+            <strong>.contenedor {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: center;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            }</strong>
+        </li>
+        <li>
+            <strong>.item {<br>
+            &nbsp;&nbsp;flex: 1;<br>
+            }</strong>
+        </li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Floats</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>float</strong> permite que un elemento flote a la izquierda o derecha dentro de su contenedor.</li>
+        <li>Utilizada comúnmente para diseños de múltiples columnas.</li>
+        <li>Requiere manejo de la limpieza (clear) para evitar problemas de layout.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>float: left;</strong></li>
+        <li><strong>float: right;</strong></li>
+        <li><strong>clear: both;</strong> (Para limpiar ambos lados)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Grids</h2>
+    <ul class="info-a">
+        <li>CSS Grid es un sistema de layout bidimensional que permite crear diseños complejos y responsivos.</li>
+        <li>Se activa aplicando <strong>display: grid;</strong> al contenedor.</li>
+        <li>Permite definir filas y columnas, y colocar elementos en áreas específicas del grid.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li>
+            <strong>.grid-contenedor {<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+            &nbsp;&nbsp;grid-gap: 10px;<br>
+            }</strong>
+        </li>
+        <li>
+            <strong>.grid-item {<br>
+            &nbsp;&nbsp;background-color: #f0f0f0;<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            }</strong>
+        </li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Inheritance</h2>
+    <ul class="info-a">
+        <li>La herencia en CSS permite que ciertas propiedades se transfieran de un elemento padre a sus elementos hijos.</li>
+        <li>No todas las propiedades son heredables; las que lo son incluyen <strong>color</strong>, <strong>font-family</strong>, y <strong>line-height</strong>.</li>
+        <li>Facilita la consistencia en estilos sin necesidad de repetir código.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li>
+            <strong>body {<br>
+            &nbsp;&nbsp;color: #333;<br>
+            &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+            }</strong>
+            (Los elementos dentro del body heredarán estos estilos)
+        </li>
+        <li>
+            <strong>.padre {<br>
+            &nbsp;&nbsp;font-size: 16px;<br>
+            }<br>
+            .hijo {<br>
+            &nbsp;&nbsp; /* Hereda font-size de .padre */<br>
+            }</strong>
+        </li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Margins</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>margin</strong> crea espacio alrededor de los elementos, fuera de sus bordes.</li>
+        <li>Puedes definir márgenes individuales para cada lado usando <strong>margin-top</strong>, <strong>margin-right</strong>, etc.</li>
+        <li>Los márgenes pueden colapsar en ciertos casos para evitar espacios dobles.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>margin: 20px;</strong> (Aplica 20px de margen en todos los lados)</li>
+        <li><strong>margin-top: 10px;</strong></li>
+        <li><strong>margin: 10px 20px;</strong> (10px arriba y abajo, 20px izquierda y derecha)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Math Functions</h2>
+    <ul class="info-a">
+        <li>CSS proporciona funciones matemáticas como <strong>calc()</strong> para realizar cálculos dinámicos en propiedades.</li>
+        <li>Permite combinar unidades diferentes y realizar operaciones como suma, resta, multiplicación y división.</li>
+        <li>Mejora la flexibilidad en el diseño sin necesidad de preprocesadores.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>width: calc(100% - 50px);</strong></li>
+        <li><strong>height: calc(50vh + 20px);</strong></li>
+        <li><strong>margin: calc(10px + 2em);</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Overflow</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>overflow</strong> controla qué sucede cuando el contenido de un elemento excede su tamaño.</li>
+        <li>Los valores comunes son <strong>visible</strong>, <strong>hidden</strong>, <strong>scroll</strong>, y <strong>auto</strong>.</li>
+        <li>Permite manejar el desbordamiento de contenido de manera eficiente.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>overflow: hidden;</strong></li>
+        <li><strong>overflow: scroll;</strong></li>
+        <li><strong>overflow: auto;</strong> (Añade barras de desplazamiento si es necesario)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Padding</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>padding</strong> crea espacio interno dentro de un elemento, entre el contenido y el borde.</li>
+        <li>Puedes definir padding individual para cada lado usando <strong>padding-top</strong>, <strong>padding-right</strong>, etc.</li>
+        <li>El padding afecta el tamaño total del elemento a menos que se use <strong>box-sizing: border-box;</strong>.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>padding: 15px;</strong> (Aplica 15px de padding en todos los lados)</li>
+        <li><strong>padding-top: 10px;</strong></li>
+        <li><strong>padding: 10px 20px;</strong> (10px arriba y abajo, 20px izquierda y derecha)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Position</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>position</strong> controla cómo se posiciona un elemento en la página.</li>
+        <li>Los valores incluyen <strong>static</strong>, <strong>relative</strong>, <strong>absolute</strong>, <strong>fixed</strong>, y <strong>sticky</strong>.</li>
+        <li>Permite colocar elementos en ubicaciones específicas dentro del layout.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>position: relative;</strong> (Posiciona el elemento relativo a su posición original)</li>
+        <li><strong>position: absolute;</strong> (Posiciona el elemento relativo a su ancestro posicionado más cercano)</li>
+        <li><strong>position: fixed;</strong> (Posiciona el elemento relativo a la ventana del navegador)</li>
+        <li><strong>position: sticky;</strong> (Mantiene el elemento pegado al viewport mientras se desplaza)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Pseudo-classes</h2>
+    <ul class="info-a">
+        <li>Las pseudo-clases en CSS permiten seleccionar elementos en estados específicos o basados en su posición.</li>
+        <li>Ejemplos comunes incluyen <strong>:hover</strong>, <strong>:active</strong>, <strong>:nth-child()</strong>, y <strong>:first-of-type</strong>.</li>
+        <li>Facilitan la aplicación de estilos dinámicos sin necesidad de JavaScript.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>a:hover { color: red; }</strong> (Cambia el color del enlace al pasar el ratón)</li>
+        <li><strong>li:nth-child(2) { background-color: #f0f0f0; }</strong> (Aplica fondo a cada segundo <em>li</em>)</li>
+        <li><strong>button:active { transform: scale(0.95); }</strong> (Escala el botón al ser clicado)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>SASS</h2>
+    <ul class="info-a">
+        <li>SASS (Syntactically Awesome Stylesheets) es un preprocesador de CSS que añade funcionalidades avanzadas como variables, anidamiento, mixins, y más.</li>
+        <li>Permite escribir CSS de manera más eficiente y mantenible.</li>
+        <li>Se compila en CSS estándar que los navegadores pueden interpretar.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li>
+            <strong>$color-principal: #3498db;<br>
+            .boton {<br>
+            &nbsp;&nbsp;background-color: $color-principal;<br>
+            }</strong>
+        </li>
+        <li>
+            <strong>@mixin flex-center {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: center;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            }<br>
+            .contenedor {<br>
+            &nbsp;&nbsp;@include flex-center;<br>
+            }</strong>
+        </li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Selectors</h2>
+    <ul class="info-a">
+        <li>Los selectores en CSS especifican qué elementos HTML serán estilizados.</li>
+        <li>Tipos de selectores incluyen selectores de tipo, clase, ID, atributos, descendientes, combinadores, y más.</li>
+        <li>Permiten aplicar estilos precisos a elementos específicos en la página.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>p { color: blue; }</strong> (Selecciona todos los párrafos)</li>
+        <li><strong>.activo { background-color: yellow; }</strong> (Selecciona elementos con la clase 'activo')</li>
+        <li><strong>#header { height: 100px; }</strong> (Selecciona el elemento con ID 'header')</li>
+        <li><strong>input[type="text"] { border: 1px solid #ccc; }</strong> (Selecciona inputs de tipo texto)</li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Sizing</h2>
+    <ul class="info-a">
+        <li>Las propiedades de sizing en CSS controlan el tamaño de los elementos.</li>
+        <li>Incluyen <strong>width</strong>, <strong>height</strong>, <strong>max-width</strong>, <strong>max-height</strong>, <strong>min-width</strong>, y <strong>min-height</strong>.</li>
+        <li>Permiten definir dimensiones precisas o relativas para elementos.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>width: 100px;</strong></li>
+        <li><strong>height: 50vh;</strong></li>
+        <li><strong>max-width: 500px;</strong></li>
+        <li><strong>min-height: 200px;</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Transform Functions</h2>
+    <ul class="info-a">
+        <li>Las funciones de transformación en CSS permiten rotar, escalar, inclinar y trasladar elementos.</li>
+        <li>Se aplican usando la propiedad <strong>transform</strong>.</li>
+        <li>Mejoran la interactividad y animaciones visuales sin alterar el flujo del documento.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>transform: rotate(45deg);</strong></li>
+        <li><strong>transform: scale(1.5);</strong></li>
+        <li><strong>transform: translateX(50px);</strong></li>
+        <li><strong>transform: skewY(10deg);</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Transition</h2>
+    <ul class="info-a">
+        <li>Las transiciones en CSS permiten cambiar propiedades de manera gradual en respuesta a interacciones.</li>
+        <li>Se definen usando las propiedades <strong>transition-property</strong>, <strong>transition-duration</strong>, <strong>transition-timing-function</strong>, y <strong>transition-delay</strong>.</li>
+        <li>Mejoran la experiencia del usuario añadiendo fluidez a los cambios de estilo.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>transition: background-color 0.5s ease;</strong></li>
+        <li><strong>.boton:hover {<br>
+        &nbsp;&nbsp;background-color: green;<br>
+        &nbsp;&nbsp;transition: background-color 0.3s ease-in-out;<br>
+        }</strong></li>
+        <li><strong>transition: all 1s;</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Typography</h2>
+    <ul class="info-a">
+        <li>La tipografía en CSS se refiere al estilo y presentación del texto.</li>
+        <li>Propiedades clave incluyen <strong>font-family</strong>, <strong>font-size</strong>, <strong>font-weight</strong>, <strong>line-height</strong>, y <strong>text-align</strong>.</li>
+        <li>Permite mejorar la legibilidad y estética del contenido textual.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>font-family: 'Arial, sans-serif';</strong></li>
+        <li><strong>font-size: 16px;</strong></li>
+        <li><strong>font-weight: bold;</strong></li>
+        <li><strong>line-height: 1.5;</strong></li>
+        <li><strong>text-align: center;</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Units</h2>
+    <ul class="info-a">
+        <li>Las unidades en CSS determinan las dimensiones de las propiedades como tamaño, margen, padding, etc.</li>
+        <li>Las unidades más comunes incluyen <strong>px</strong>, <strong>em</strong>, <strong>rem</strong>, <strong>%,</strong> y <strong>vh/vw</strong>.</li>
+        <li>Elegir la unidad adecuada es crucial para diseños responsivos y accesibles.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>width: 100px;</strong></li>
+        <li><strong>margin: 2em;</strong></li>
+        <li><strong>font-size: 1.5rem;</strong></li>
+        <li><strong>height: 50vh;</strong></li>
+        <li><strong>padding: 10%;</strong></li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Variables</h2>
+    <ul class="info-a">
+        <li>Las variables en CSS, conocidas como Custom Properties, permiten almacenar valores que pueden reutilizarse en el código.</li>
+        <li>Se definen dentro de un selector usando <strong>--nombre-variable</strong> y se acceden con la función <strong>var()</strong>.</li>
+        <li>Facilitan la gestión y mantenimiento de estilos, especialmente en proyectos grandes.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li>
+            <strong>:root {<br>
+            &nbsp;&nbsp;--color-principal: #3498db;<br>
+            }</strong>
+        </li>
+        <li>
+            <strong>.boton {<br>
+            &nbsp;&nbsp;background-color: var(--color-principal);<br>
+            }</strong>
+        </li>
+    </ol>
+    </div>
+    
+    <div class="infor">
+    <h2>Visibility</h2>
+    <ul class="info-a">
+        <li>La propiedad <strong>visibility</strong> controla si un elemento es visible o invisible en la página.</li>
+        <li>Los valores principales son <strong>visible</strong>, <strong>hidden</strong>, y <strong>collapse</strong>.</li>
+        <li>A diferencia de <strong>display: none;</strong>, <strong>visibility: hidden;</strong> mantiene el espacio del elemento en el layout.</li>
+    </ul>
+    
+    <h2>Ejemplos</h2>
+    <ol class="info-a1">
+        <li><strong>visibility: hidden;</strong></li>
+        <li><strong>visibility: visible;</strong></li>
+        <li><strong>visibility: collapse;</strong> (Usado principalmente en tablas)</li>
+    </ol>
+    </div>
+            
+
+    <footer class="fondo"></footer>
+
+    <script src="guia.js"></script>
+</body>
+</html>

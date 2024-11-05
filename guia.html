@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de programacion</title>
+    <link rel="stylesheet" href="guia.css">
+    <link rel="shortcut icon" href="favi.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <p class="logo nav-link">Guía de Programación Básica &bull; HTML</p>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="guiacss.html" class="nav-menu-link nav-link">CSS</a></li>
+                <!-- Si hay más elementos en el menú, agrégalos aquí -->
+            </ul>
+        </nav>
+    </header>
+    
+
+        <div class="infor">
+            <h2 class="cabeza">
+                Atributos
+            </h2>
+            <ul class="info-a"> 
+                <li>En HTML, los atributos son características que se usan para proporcionar información adicional sobre un elemento HTML. <br>Se colocan dentro de la etiqueta de apertura del elemento y consisten en un nombre de atributo y un valor. <br>Estos atributos controlan diversas propiedades del elemento, como su apariencia o su comportamiento.</li>
+                <li>Es posible asignar varios atributos a un mismo elemento, siempre separándolos por espacios dentro de la etiqueta. <br>Por ejemplo, <strong> &lt;a href="enlace" target="blank" class="enlace"></strong> contiene tres atributos que controlan el destino del enlace, cómo se abre el enlace en una nueva pestaña y la clase CSS aplicada.</li>
+                <li>Hay varios atributos comunes en HTML. <br>El atributo id permite identificar de manera única un elemento, lo que es útil para enlazar estilos CSS o scripts de JavaScript a un elemento específico. <br>Por ejemplo:  <strong>&lt;div id="mi-div"></strong> . El atributo class se utiliza para aplicar estilos a múltiples elementos mediante clases CSS. <br>Un ejemplo sería <strong>&lt;p class="texto-destacado"></strong> , donde varios elementos pueden compartir la misma clase para recibir los mismos estilos.</li>
+                <li>En resumen, los atributos en HTML son esenciales para controlar y definir cómo se comportan o se ven los elementos dentro de una página web. <br>Algunos atributos son comunes a todos los elementos, mientras que otros son específicos de ciertos tipos de elementos, lo que permite mayor flexibilidad en el diseño y la interacción de las páginas web.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>href=""</strong> Se usa para redirigir a a un link especifico. </li>
+                <li><strong>src=""</strong> Se usa para proporcionar una fuente para una iamgen o vídeo.</li>
+                <li><strong>alt=""</strong> Se usa en las imagenes para proporcionar una descripcion cunado no carga la imagen.</li>
+                <li><strong>class=""</strong> Se utiliza para darle un nombre a una etiqueta y podes editarla desde CSS independientemente.</li>
+                <li><strong>id=""</strong> Se utiliza para lo mismo que la anterior pero es mas frecuente para usar con JavaScript.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Entidades
+            </h2>
+            <ul class="info-a"> 
+                <li>En HTML, las entidades son secuencias de caracteres especiales que representan símbolos que no se pueden escribir directamente en el código. <br>Esto es útil para mostrar caracteres reservados o símbolos que podrían causar problemas en el navegador. <br>Las entidades HTML siempre comienzan con un símbolo de ampersand (&) y terminan con un punto y coma (;).</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&amp;lt;</strong> &lt; Se usa para sustituir el simbolo y representarlo en una web. </li>
+                <li><strong>&amp;gt;</strong> &gt; Se usa igual que su contraparte.</li>
+                <li><strong>&amp;amp;</strong> &amp; Se usa para hacer visible el simbolo que que acciona los atributos.</li>
+                <li><strong>&amp;copy;</strong> &copy; Se usa para poner el simbolo de copyright.</li>
+                <li><strong>&amp;euro;</strong> &euro; Se usa para poner el simbolo de euro.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Headers
+            </h2>
+            <ul class="info-a"> 
+                <li>Los Headers son etiquetas de texto que van de mayor tamaño a menor.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;h1&gt;</strong> Se usa para Titulos. </li>
+                <li><strong>&lt;h2&gt;</strong> Se usa para Subtitulos.</li>
+                <li><strong>&lt;h3&gt;</strong> Se usa en textos resaltados.</li>
+                <li><strong>&lt;h4&gt;</strong> Se usa para texto normal.</li>
+                <li><strong>&lt;h5&gt;</strong> Se usa para cosas menos importantes.</li>
+                <li><strong>&lt;h6&gt;</strong> Es el mas pequeño de todos.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Listas
+            </h2>
+            <ul class="info-a"> 
+                <li>Las listas son una manera de organizar elementos para agruparlos en una lista con puntos o en una con numeros.</li>
+                <li>Las etiquetas de <strong>&lt;ul&gt;</strong> y <strong>&lt;ol&gt;</strong> solo organizan, la etiquetas de <strong>&lt;li&gt;</strong> es en la que se escribe el texto.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;ul&gt;</strong> Las listas desordenadas o son listas que organizan con puntos o los atributos llamados <strong>&amp;bullet;</strong>.</li>
+                <li><strong>&lt;ol&gt;</strong> Son lo mismo que las desordenadas pero usan numeros en vez de los puntos.</li>
+                <li><strong>&lt;li&gt;</strong> Es el elemento que se usa dentro de las listas para escribir el texto.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Etiquetas
+            </h2>
+            <ul class="info-a"> 
+                <li>Las etiquetas en HTML son la forma basica de escribir un codigo de manera que es la base para usar los atributos y demas formas de codigo.</li>
+                <li>Las etiquetas de <strong>&lt;ul&gt;</strong> y <strong>&lt;li&gt;</strong> son un ejemplo de etiquetas que se usan en conjunto.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;a&gt;</strong> Su funcion es actuar como un hipervinculo el cual te redirige a otro sitio.</li>
+                <li><strong>&lt;h1&gt;</strong> Etiqueta usada mayormente para encabezados.</li>
+                <li><strong>&lt;hr&gt;</strong> Crea una linea que va de lado a lado de la pantalla.</li>
+                <li><strong>&lt;br&gt;</strong> Cambia de renglon, haciendo que en donde lo pongas se corte y siga en el siguiente renglon.</li>
+                <li><strong>&lt;div&gt;</strong> Es un contenedor que se usa para segregar contenido y modificarlo por separado.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Clases
+            </h2>
+            <ul class="info-a"> 
+                <li>Las clases <strong>&lt;ejemplo class="ejemplo"&gt;</strong> son un tipo de atributo que tiene el proposito de modificar al elemento desde CSS</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong> .ejemplo {  font-size: bold; }</strong> Este es un ejemplo de su sintaxis y funcion en el archivo de CSS.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Favicon
+            </h2>
+            <ul class="info-a"> 
+                <li>Los Favicon son iconos que se ponen en la pagina con la siguiente sintaxis, <strong>&lt;link rel="shortcut icon" href="el favicon que descargaste" type="image/x-icon"&gt;</strong>.</li>
+                <li>El favicon se puede conseguir de muchas fuentes pero tiene que ser un formato de pocos pixeles y tienes que descargarlo para agregarlo a tu web.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWrVbkMZABe4d6i59jk3PejihaHhX5KF0FXg&s" alt="Favicon">
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Iframes
+            </h2>
+            <ul class="info-a"> 
+                <li>Los <strong>&lt;iframe&gt;</strong>  representan un navegador integrado en el que puedes mostrar variedad de codigos.</li>
+                <li>Los <strong>&lt;iframe&gt;</strong> se usan mayormenete para insertar videos de youtube en una pagina al hacer click en la opcion de embed en un video.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Qvk_3NeZhq_yZ-FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;</strong></li>
+                <li>Este codigo incorpora un video de youtube usando la funcion de los iframes.</li>
+            </ol>
+    
+        </div>
+
+        <div class="infor">
+            <h2>
+                Quotes
+            </h2>
+            <ul class="info-a"> 
+                <li>Las "Quotes" o <strong>&lt;q&gt;</strong>  se usan para separar una pequeña porcion del codigo.</li>
+                <li>Las "Blockquotes" o <strong>&lt;blockquote&gt;</strong>  se usan para separar porciones de codigo mas grandes.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+
+            <ol class="info-a1">
+                <li><strong>&lt;q&gt;</strong> Es la que una acotacion corta.</li>
+                <li><strong>&lt;blockquote&gt;</strong> Es una acotacion mas larga usada para parrafos completos.</li>
+            </ol>
+    
+        </div>
+
+        <div class="infor">
+            <h2>
+                Formatos de texto
+            </h2>
+            <ul class="info-a"> 
+                <li>Los formatos de texto son modificadores incorporados en el html para evitar el uso de CSS en paginas simples.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+
+            <ol class="info-a1">
+                <li><strong>&lt;b&gt;</strong> Cambia el texto a <b>negrita</b></li>
+                <li><strong>&lt;em&gt;</strong> Cambia el texto a <em>italica</em>.</li>
+                <li><strong>&lt;i&gt;</strong> Cambia el texto a <i>italica</i> pero es con diferente sintaxis.</li>
+                <li><strong>&lt;str&gt; o &lt;strong&gt;</strong> Cambia el texto a <b>negrita</b> pero se usa en diferente situacion.</li>
+                <li><strong>&lt;u&gt;</strong> Le pone <u>underline</u> a el texto seleccionado.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Comentarios
+            </h2>
+            <ul class="info-a"> 
+                <li>Los comentarios son un tipo de codigo que no se muestra en la pagina, se usa para aclarar ciertos codigo o separar por secciones dentro del codigo.</li>
+                <li>Otro de sus usos es quitar las funciones a las porciones de codigo mientra se experimenta con otro.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+
+            <ol class="info-a1">
+                <li><strong>&lt;&excl;&#45;&#45;&#45;&#45;&gt;</strong> En medio de los guiones se escribe el texto deseado.</li>
+                <li><strong>&#47;&#42;&#42;&#47;</strong> Esta es su variante para poner comentarios en CSS</li>
+            </ol>
+    
+        </div>
+
+        <div class="infor">
+            <h2>
+                File paths
+            </h2>
+            <ul class="info-a"> 
+                <li>Los file paths son rutas o direcciones que indican la ubicación exacta de un archivo dentro de un sistema de archivos. </li>
+                <li>Pueden ser absolutos (que empiezan desde la raíz del sistema) o relativos (basados en la ubicación actual del archivo).</li>
+                <li>Los path files ayudan a acceder, abrir o manipular archivos en el sistema, y pueden variar según el sistema operativo (Windows, Linux, macOS).</li>
+                <li>Normalmente incluyen directorios, subdirectorios y el nombre del archivo con su extensión.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+
+            <ol class="info-a1">
+                <li><strong>href="/home/user/documents/report.pdf"</strong> Es una ruta absoluta para Linux</li>
+                <li><strong>href="C:\Users\John\Documents\report.pdf"</strong> Es una ruta absoluta para Windows</li>
+                <li><strong>href="./images/photo.jpg"</strong> Es una ruta relativa.</li>
+                <li><strong>href="../projects/code.js"</strong> Es una ruta relativa a un directorio.</li>
+            </ol>
+    
+        </div>
+
+        <div class="infor">
+            <h2>
+                Imágenes
+            </h2>
+            <ul class="info-a"> 
+                <li>La etiqueta <strong>&lt;img&gt;</strong> se usa para insertar imágenes en una página web.</li>
+                <li>Es importante proporcionar el atributo <strong>alt</strong> para describir la imagen, mejorando la accesibilidad.</li>
+                <li>Puedes ajustar el tamaño de la imagen usando los atributos <strong>width</strong> y <strong>height</strong>.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</strong></li>
+                <li><strong>&lt;img src="logo.png" width="100" height="50" alt="Logo de la empresa"&gt;</strong></li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                HTML Semántico
+            </h2>
+            <ul class="info-a"> 
+                <li>El HTML semántico utiliza etiquetas que describen el propósito del contenido, mejorando la accesibilidad y el SEO.</li>
+                <li>Etiquetas como <strong>&lt;header&gt;</strong>, <strong>&lt;footer&gt;</strong>, <strong>&lt;article&gt;</strong> y <strong>&lt;section&gt;</strong> son ejemplos de HTML semántico.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;header&gt; ... &lt;/header&gt;</strong> Define el encabezado de una página o sección.</li>
+                <li><strong>&lt;article&gt; ... &lt;/article&gt;</strong> Representa contenido independiente y autónomo.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Videos
+            </h2>
+            <ul class="info-a"> 
+                <li>La etiqueta <strong>&lt;video&gt;</strong> se usa para insertar videos en una página web.</li>
+                <li>Puedes controlar la reproducción del video usando atributos como <strong>controls</strong>, <strong>autoplay</strong> y <strong>loop</strong>.</li>
+                <li>Es recomendable proporcionar formatos alternativos para asegurar la compatibilidad entre navegadores.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</strong></li>
+                <li><strong>&lt;video width="320" height="240" autoplay loop&gt;&lt;/video&gt;</strong></li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Elementos
+            </h2>
+            <ul class="info-a"> 
+                <li>Los elementos en HTML son las construcciones básicas que componen una página web, formados por etiquetas de apertura y cierre.</li>
+                <li>Cada elemento puede contener texto, otros elementos o ambos.</li>
+                <li>Ejemplos de elementos incluyen <strong>&lt;div&gt;</strong>, <strong>&lt;p&gt;</strong>, <strong>&lt;a&gt;</strong>, entre otros.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;div&gt;Contenido&lt;/div&gt;</strong> Define una sección genérica del documento.</li>
+                <li><strong>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</strong> Representa un párrafo de texto.</li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Formularios
+            </h2>
+            <ul class="info-a"> 
+                <li>La etiqueta <strong>&lt;form&gt;</strong> se utiliza para crear formularios que permiten a los usuarios enviar datos.</li>
+                <li>Dentro de un formulario, puedes usar elementos como <strong>&lt;input&gt;</strong>, <strong>&lt;textarea&gt;</strong>, <strong>&lt;button&gt;</strong>, entre otros.</li>
+                <li>Es importante definir el atributo <strong>action</strong> para indicar a dónde se enviarán los datos y <strong>method</strong> para el método de envío.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li>
+                    <strong>&lt;form action="submit.php" method="post"&gt;<br>
+                    &nbsp;&nbsp;&lt;input type="text" name="nombre"&gt;<br>
+                    &nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                    &lt;/form&gt;</strong>
+                </li>
+                <li>
+                    <strong>&lt;form action="/buscar" method="get"&gt;<br>
+                    &nbsp;&nbsp;&lt;input type="search" name="q" placeholder="Buscar..."&gt;<br>
+                    &nbsp;&nbsp;&lt;button type="submit"&gt;Buscar&lt;/button&gt;<br>
+                    &lt;/form&gt;</strong>
+                </li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Links
+            </h2>
+            <ul class="info-a"> 
+                <li>La etiqueta <strong>&lt;a&gt;</strong> se usa para crear hipervínculos que conectan diferentes páginas o recursos.</li>
+                <li>El atributo <strong>href</strong> especifica la URL del destino del enlace.</li>
+                <li>Puedes abrir enlaces en una nueva pestaña usando el atributo <strong>target="_blank"</strong>.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li><strong>&lt;a href="https://www.ejemplo.com"&gt;Visitar Ejemplo&lt;/a&gt;</strong></li>
+                <li><strong>&lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abrir en nueva pestaña&lt;/a&gt;</strong></li>
+            </ol>
+    
+        </div>
+    
+        <div class="infor">
+            <h2>
+                Tablas
+            </h2>
+            <ul class="info-a"> 
+                <li>La etiqueta <strong>&lt;table&gt;</strong> se usa para crear tablas que organizan datos en filas y columnas.</li>
+                <li>Dentro de una tabla, se utilizan etiquetas como <strong>&lt;tr&gt;</strong> (fila), <strong>&lt;th&gt;</strong> (encabezado de columna) y <strong>&lt;td&gt;</strong> (celda de datos).</li>
+                <li>Es recomendable usar etiquetas semánticas para mejorar la accesibilidad y estructura de la tabla.</li>
+            </ul>
+    
+            <h2>Ejemplos</h2>
+    
+            <ol class="info-a1">
+                <li>
+                    <strong>&lt;table&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Juan&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;</strong>
+                </li>
+                <li>
+                    <strong>&lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Producto&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Precio&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Laptop&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$1000&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;</strong>
+                </li>
+            </ol>
+    
+        </div>
+
+        
+        
+    
+
+
+    
+           <footer class="fondo">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+           </footer>
+</body>
+</html>
